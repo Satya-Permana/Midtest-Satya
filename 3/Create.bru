@@ -1,0 +1,20 @@
+meta {
+  name: Create
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "kulkas",
+    "description": "baru",
+    "price": "500000",
+    "quantity": 20
+  }
+}

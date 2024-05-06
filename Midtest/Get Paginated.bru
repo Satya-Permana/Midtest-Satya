@@ -1,0 +1,15 @@
+meta {
+  name: Get Paginated
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:5000/users?page_number=0
+  body: none
+  auth: none
+}
+
+query {
+  page_number: 0
+}

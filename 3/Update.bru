@@ -1,0 +1,20 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5000/products/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "case handphone",
+    "description": "baru",
+    "price": "50000",
+    "quantity": 100
+  }
+}
